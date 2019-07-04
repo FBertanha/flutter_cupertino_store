@@ -68,6 +68,7 @@ class ProductRowItem extends StatelessWidget {
             onPressed: () {
               final model = Provider.of<AppStateModel>(context);
               model.addProductToCart(product.id);
+              print(model.productsInCart.length);
             },
           ),
         ],
